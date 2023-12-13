@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boat</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="bg-white d-none d-lg-block px-1">
+    <div class="row">
+      <div class="col-lg-2">
+        <h3>boAt</h3>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-evenly">
+        <div class="name-arrow">
+          <span>Catedories</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="nav-name">
+          <span>boAt Truly Yours</span>
+        </div>
+        <div class="nav-name">
+          <span>Gift with boAt</span>
+        </div>
+        <div class="nav-name">
+          <span>Corporate Orders</span>
+        </div>
+        <div class="name-arrow"></div>
+        <span>More</span>
+        <i class="bi bi-chevron-down"></i>
+      </div>
+      <div class="col-lg-4 d-flex align-items-center w-25">
+        <div class="search-bar rounded-pill bg-danger input-group d-flex align-items-center h-75">
+          <i class="bi bi-search h4 ps-2"></i>
+          <input class="form-control me-4 bg-transparent border-0" type="search" placeholder="Search Smartwatch"
+            aria-label="Search" />
+        </div>
+        <div class="icons d-flex justify-content-around">
+          <i class="bi bi-person h2"></i>
+          <i class="bi bi-handbag h2"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar z-2 overflow-y-scroll hidden ">
+        <div class="sid-nam-ic">
+          <div id="btn-call" onclick="hide()">
+        
+          <button class="side-but">Categories</button>
+          <i class="bi bi-plus h2"></i>
+        </div>
+
+          <div class="container bg-body-tertiary" id="test">
+          <div class="row w-100 d-flex">
+
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/true wireless headphone.webp" alt="">
+              </div>
+              <span class=" w-100 d-flex justify-content-center align-items-center"> 
+                True Wireless Buds
+              </span>
+            </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/personlised headphone.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Perzonailzed Products
+              </div>
+            </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/neckband.png" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Neckbands
+              </div>
+            </div>
+            </div>
+          
+
+          <!-- <div class="row d-flex w-100"> -->
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/smartwatches_100x.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Smartwatches
+              </div>
+              </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/wireless headphone.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Wireless Headphones
+              </div>
+            </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/wireless speakers.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Wireless speakers
+              </div>
+            </div>
+          </div>
+          
+          <!-- </div> -->
+
+          <!-- <div class="row d-flex w-100"> -->
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/wired headphones.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Wired Headphones
+              </div>
+            </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/wired earphones.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Wired Earphones
+              </div>
+            </div>
+            </div>
+
+            <div class="col-4 d-flex justify-content-center">
+              <div class="asdd">
+              <div class="item-img">
+                <img src="images/sound bars.webp" alt="">
+              </div>
+              <div class="item-name text-wrap">
+                Soundbaars
+              </div>
+            </div>
+            </div>
+          <!-- </div> -->
+
+
+        </div>
+
+        </div>
+      
+</div>
+        <div class="sid-nam-ic">
+          <button class="side-but">boAt Truly</button>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+
+        <div class="sid-nam-ic">
+          <button class="side-but">Gift with boAt</button>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+
+        <div class="sid-nam-ic">
+          <button class="side-but">Corporate Orders</button>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+
+        <div class="sid-nam-ic">
+          <button class="side-but">More</button>
+          <i class="bi bi-plus h2"></i>
+        </div>
+
+        <div class="sid-nam-ic">
+          <button class="side-but">Account</button>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+
+        <div class="sid-nam-ic">
+          <button class="side-but">Track Your Order</button>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+
+  </div>
+
+  <nav class="d-lg-none">
+    <div class="row d-flex">
+      <div class="col-6 d-flex justify-content-start">
+        <button type="button" class="btn" onclick="showSidebar()">
+          <div class="but-icon">
+            <i class="bi bi-list"></i>
+          </div>
+        </button>
+        <h3>boAt</h3>
+      </div>
+      <div class="col-6 d-flex align-items-center justify-content-end gap-3">
+        <i class="bi bi-search h4 ps-2"></i>
+        <i class="bi bi-person h2"></i>
+        <i class="bi bi-handbag h2"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- section one started from here -->
+  <section class="first-sec">
+    <div class="row">
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center lh-base">
+        <h2 class="display">True Wirless</h2>
+        <h2 class="sec-head">Earbuds</h2>
+        <h4>Starting From ₹999*</h4>
+        <div>
+          <span class="rounded bg-black ps-3 pe-3 pt-1 pb-1 text-white">Shop Products
+            <i class="bi bi-arrow-right-circle"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <img src="images/first-sec_img.webp" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <!-- end -->
+    <!-- Section two strated  -->
+    <section>
+      <h2 class="headline px-5">Best <span class="bold-headline">Sellers</span></h2>
+      <div class="row d-flex flex-nowrap overflow-x-auto">
+        <div class="col-lg-3 p-0 d-flex justify-content-center p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- section two end  -->
+  <section style="background: linear-gradient(#fffdfa,#FFF3DB,#fffdfa);">
+    <div class="row d-flex">
+      <div class="col-lg-8 d-flex justify-content-center align-content-center">
+        <img src="images/sec-bac-img.webp" class="img-fluid" style="width: 720em;">
+      </div>
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center lh-base order-first order-md-first">
+        <h2 class="display">Smart
+          <span class="sec-head">Whatches</span>
+        </h2>
+        <h4>Starting From ₹1699*</h4>
+        <div>
+          <span class="rounded bg-black ps-3 pe-3 pt-1 pb-1 text-white">Shop Products
+            <i class="bi bi-arrow-right-circle"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Second vertical section -->
+    <section>
+      <h2 class="headline px-5">Best <span class="bold-headline">Sellers</span></h2>
+      <div class="row d-flex flex-nowrap overflow-x-auto">
+
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- End -->
+  <section style="background: linear-gradient(#fffdfa,#FFF3DB,#fffdfa);">
+    <div class="row d-flex">
+      <div class="col-lg-8 d-flex justify-content-center align-content-center">
+        <img src="images/sec-bac-three.webp" class="img-fluid" style="width: 720em;">
+      </div>
+      <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center lh-base order-first order-md-first">
+        <h2 style="font-family: 'Archivo Black', sans-serif;">Neckbands</h2>
+        <h4>Starting From ₹999*</h4>
+        <div>
+          <span class="rounded bg-black ps-3 pe-3 pt-1 pb-1 text-white">Shop Products
+            <i class="bi bi-arrow-right-circle"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Second vertical section -->
+    <section>
+      <h2 class="headline px-5">Best <span class="bold-headline">Sellers</span></h2>
+      <div class="row d-flex flex-nowrap overflow-x-auto">
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-0 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 20rem;">
+            <div>
+              <img src="images/Aiarpods 131.webp" class="card-img-top" style="width: 20em; height: 20em;">
+              <div class="rel-div d-flex justify-content-center std w-100">
+                <div class="rounded-pill bg-warning w-75 d-flex justify-content-center">
+                  <span>60 Hours Playback</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Airpods 131</h5>
+              <h5 class="card-title">₹899
+                <span class="text-decoration-line-through text-secondary">₹2990</span>
+                <span class="text-success">70% off</span>
+              </h5>
+              <a href="#" class="btn btn-dark d-block ps-5 pe-5">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script>
+    //   var a=document.getElementById("btn-call")
+    // a.addEventListener("click",hide())
+      function hide() {
+        var s=document.getElementById("test");
+        s.classList.toggle('d-none');
+        console.log(s);
+
+      }
+      let side=document.querySelector(".sidebar");
+      // let isshow = true;
+      function showSidebar() {
+      side.classList.toggle("d-block"); 
+      }
+
+        // if (isshow){
+        //   sidebar.style.display = "none";
+        //   isshow = false;
+        // }
+        // else {
+        //   sidebar.style.display="block";
+        //   isshow = true;
+        // }
+
+
+    </script>
+</body>
+</html>
